@@ -7,8 +7,8 @@ const game = () => {
 
         const opponentOptions = ['rock', 'paper', 'scissors']; //0 1 2
 
-        options.forEach((options) => { //функции надо передать option??
-            options.addEventListener('click', function() { //какого здесь нельзя стрелочную функцию??
+        options.forEach((option) => { //функции надо передать option??
+            option.addEventListener('click', function() { //какого здесь нельзя стрелочную функцию?? Потеря контекста
                 const opponentChoose = Math.floor(Math.random() * 3); //округлить значение до целых, как?
                 const opponentChoice = opponentOptions[opponentChoose];
                 console.log(opponentChoice); 
